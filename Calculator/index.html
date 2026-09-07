@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="calculator">
+
+    <div class="brand">CASIO</div>
+    <span class="lowercase-text">MADE IN CHINA</span>
+    <div class="display" id="display">0</div>
+
+    <div class="ce_row">
+      <button class="ce_btn" data-action="ce">CE ⌫</button>
+    </div>
+
+    <div class="keys">
+
+      <button class="key key_gray" data-action="clear">AC</button>
+      <button class="key key_gray" data-action="sign">+/-</button>
+      <button class="key key_gray" data-action="percent">%</button>
+      <button class="key key_orange" data-action="divide">÷</button>
+
+      <button class="key key_dark" data-number="7">7</button>
+      <button class="key key_dark" data-number="8">8</button>
+      <button class="key key_dark" data-number="9">9</button>
+      <button class="key key_orange" data-action="multiply">×</button>
+
+      <button class="key key_dark" data-number="4">4</button>
+      <button class="key key_dark" data-number="5">5</button>
+      <button class="key key_dark" data-number="6">6</button>
+      <button class="key key_orange" data-action="subtract">−</button>
+
+      <button class="key key_dark" data-number="1">1</button>
+      <button class="key key_dark" data-number="2">2</button>
+      <button class="key key_dark" data-number="3">3</button>
+      <button class="key key_orange" data-action="add">+</button>
+
+      <button class="key key_dark" data-number="0">0</button>
+      <button class="key key_dark" data-action="decimal">.</button>
+      <button class="key key_dark key_equal key key_orange" data-action="equals">=</button>
+
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
