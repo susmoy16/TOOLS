@@ -1,0 +1,391 @@
+/* _____ base reset _____ */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Segoe UI", Arial, sans-serif;
+  background: #F4F6F8;
+  color: #1F2937;
+  line-height: 1.5;
+}
+
+/* _____ page header _____ */
+.site_header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #14213D;
+  color: #ffffff;
+  padding: 16px 32px;
+}
+
+.brand {
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+}
+
+.tutorial_btn {
+  background: #FCA311;
+  color: #14213D;
+  border: none;
+  padding: 10px 18px;
+  border-radius: 6px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.tutorial_btn:hover {
+  background: #e6940c;
+}
+
+/* _____ 3 column layout wrapper _____ */
+.layout_wrapper {
+  display: grid;
+  grid-template-columns: 480px 1fr 1fr 280px;
+  gap: 20px;
+  padding: 20px 32px;
+  align-items: column;
+}
+
+/* _____ left sidebar : profile card _____ */
+.profile_sidebar {
+  background: #ffffff;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.08);
+}
+
+.profile_photo_box {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 16px;
+}
+
+.profile_photo {
+  width: 96px;
+  height: 96px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #14213D;
+}
+
+.profile_contact_list {
+  list-style: none;
+  font-size: 14px;
+  margin-bottom: 16px;
+}
+
+.profile_contact_list li {
+  padding: 6px 0;
+  border-bottom: 1px solid #EEEEEE;
+}
+
+.prev_institute_box {
+  font-size: 13px;
+  color: #4B5563;
+  background: #F4F6F8;
+  padding: 10px;
+  border-radius: 6px;
+  margin-bottom: 16px;
+}
+
+.study_area_box p {
+  font-size: 13px;
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+
+.study_area_box a {
+  font-size: 13px;
+  color: #14213D;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.study_area_box a:hover {
+  text-decoration: underline;
+}
+
+/* _____ main content column _____ */
+.main_content {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.student_id_card {
+  background: #ffffff;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.08);
+}
+
+.student_name {
+  font-size: 22px;
+  margin-bottom: 8px;
+}
+
+.id_row {
+  display: flex;
+  gap: 24px;
+  font-size: 14px;
+  color: #4B5563;
+  flex-wrap: wrap;
+}
+
+/* _____ notice / alert banners _____ */
+.notice_section {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.notice {
+  padding: 12px 16px;
+  border-radius: 8px;
+  color: #ffffff;
+  font-size: 14px;
+  text-align: center;
+}
+
+.notice_warning {
+  background: #FCA311;
+}
+
+.notice_danger {
+  background: #E5484D;
+}
+
+/* _____ transport booking form _____ */
+.transport_section {
+  background: #ffffff;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.08);
+}
+
+.transport_section h2 {
+  font-size: 16px;
+  margin-bottom: 12px;
+}
+
+.transport_form {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.input_date,
+.input_station {
+  flex: 1;
+  min-width: 160px;
+  padding: 10px;
+  border: 1px solid #D1D5DB;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+.submit_btn {
+  background: #14213D;
+  color: #ffffff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.submit_btn:hover {
+  background: #223160;
+}
+
+/* _____ tab navigation _____ */
+.tab_nav ul {
+  list-style: none;
+  display: flex;
+  gap: 6px;
+  background: #ffffff;
+  border-radius: 10px;
+  padding: 6px;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.08);
+}
+
+.tab_link {
+  display: block;
+  padding: 10px 16px;
+  text-decoration: none;
+  color: #4B5563;
+  font-size: 14px;
+  border-radius: 6px;
+  font-weight: 600;
+}
+
+.tab_link.active,
+.tab_link:hover {
+  background: #14213D;
+  color: #ffffff;
+}
+
+/* _____ overview article / detail grid : gradient panel + colorful rotating cards _____ */
+.overview_article {
+  background: linear-gradient(135deg, #EDE9FE 0%, #E0F2FE 100%);
+  border-radius: 14px;
+  padding: 22px;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.08);
+}
+
+.overview_article h2 {
+  font-size: 17px;
+  margin-bottom: 16px;
+  color: #312E81;
+}
+
+.detail_grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px;
+}
+
+.detail_item {
+  display: flex;
+  flex-direction: column;
+  background: #ffffff;
+  padding: 12px 14px;
+  border-radius: 10px;
+  border-left: none;
+  border-top: 4px solid #A5B4FC;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.06);
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.detail_item:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 14px rgba(0,0,0,0.12);
+}
+
+/* _____ cycle a different accent color onto every card in the grid _____ */
+.detail_item:nth-child(8n+1) { border-top-color: #F472B6; }
+.detail_item:nth-child(8n+2) { border-top-color: #60A5FA; }
+.detail_item:nth-child(8n+3) { border-top-color: #34D399; }
+.detail_item:nth-child(8n+4) { border-top-color: #FBBF24; }
+.detail_item:nth-child(8n+5) { border-top-color: #A78BFA; }
+.detail_item:nth-child(8n+6) { border-top-color: #FB923C; }
+.detail_item:nth-child(8n+7) { border-top-color: #22D3EE; }
+.detail_item:nth-child(8n+8) { border-top-color: #F87171; }
+
+.detail_item span {
+  font-size: 12px;
+  color: #6B7280;
+  text-transform: uppercase;
+  letter-spacing: 0.4px;
+}
+
+.detail_item strong {
+  font-size: 14px;
+}
+
+/* _____ right sidebar : rules + status boxes _____ */
+.info_sidebar {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.side_tab_nav ul {
+  list-style: none;
+  display: flex;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.side_tab {
+  flex: 1;
+  text-align: center;
+  padding: 10px;
+  text-decoration: none;
+  font-size: 13px;
+  font-weight: 600;
+  background: #E5E7EB;
+  color: #374151;
+}
+
+.side_tab.active {
+  background: #14213D;
+  color: #ffffff;
+}
+
+.rules_section {
+  background: #ffffff;
+  border-radius: 10px;
+  padding: 16px;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.08);
+}
+
+.rules_list {
+  padding-left: 18px;
+  font-size: 13px;
+  color: #4B5563;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+/* _____ status boxes : balance / cgpa / requirement / credit _____ */
+.balance_box,
+.cgpa_box,
+.requirement_box,
+.credit_box {
+  background: #ffffff;
+  border-radius: 10px;
+  padding: 16px;
+  text-align: center;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.08);
+}
+
+.balance_box p,
+.cgpa_box p,
+.requirement_box p,
+.credit_box p {
+  font-size: 12px;
+  color: #6B7280;
+  margin-bottom: 6px;
+}
+
+.balance_box strong,
+.cgpa_box strong,
+.requirement_box strong,
+.credit_box strong {
+  font-size: 22px;
+}
+
+.balance_box strong {
+  color: #E5484D;
+}
+
+.requirement_box strong {
+  color: #14213D;
+}
+
+/* _____ hide the CGPA box as requested, kept in the HTML but not shown _____ */
+.hide_cgpa {
+  display: none;
+}
+
+/* _____ page footer _____ */
+.site_footer {
+  text-align: center;
+  padding: 16px;
+  font-size: 13px;
+  color: #6B7280;
+}
+
+/* _____ responsive : stack columns on small screens _____ */
+@media (max-width: 900px) {
+  .layout_wrapper {
+    grid-template-columns: 1fr;
+  }
+}
